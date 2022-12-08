@@ -8,7 +8,7 @@ namespace BasicLogicalProblems
         {
 
             Console.WriteLine("Welcome to Logical Problems ");
-            Console.WriteLine("select options "+"\n"+"1.Fibonacci_Series:"+"\n"+ "2.PerfectNumber :" + "\n" + "3.PrimeNumber :");
+            Console.WriteLine("select options "+"\n"+"1.Fibonacci_Series:"+"\n"+ "2.PerfectNumber :" + "\n" + "3.PrimeNumber :" + "\n" + "4.ReverseNumber");
             while (true)
             { 
                 int option = Convert.ToInt32(Console.ReadLine());
@@ -24,6 +24,9 @@ namespace BasicLogicalProblems
                         break;
                     case 3:
                         PrimeNumber.CheckPrime(20);
+                        break;
+                    case 4:
+                        ReverseNumber.Reverse();
                         break;
                     default:
                         Console.WriteLine("please try again........");
