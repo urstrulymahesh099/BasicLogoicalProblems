@@ -8,7 +8,7 @@ namespace BasicLogicalProblems
         {
 
             Console.WriteLine("Welcome to Logical Problems ");
-            Console.WriteLine("select options "+"\n"+"1.Fibonacci_Series:"+"\n"+ "2.PerfectNumber :" + "\n" + "3.PrimeNumber :" + "\n" + "4.ReverseNumber");
+            Console.WriteLine("select options "+"\n"+"1.Fibonacci_Series:"+"\n"+ "2.PerfectNumber :" + "\n" + "3.PrimeNumber :" + "\n" + "4.ReverseNumber" + "\n" + "5.CouponNumber");
             while (true)
             { 
                 int option = Convert.ToInt32(Console.ReadLine());
@@ -27,6 +27,9 @@ namespace BasicLogicalProblems
                         break;
                     case 4:
                         ReverseNumber.Reverse();
+                        break;
+                    case 5:
+                        CouponNumber.GenerateCoupon();
                         break;
                     default:
                         Console.WriteLine("please try again........");
