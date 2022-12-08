@@ -6,8 +6,9 @@ namespace BasicLogicalProblems
     {
         public static void Main(string[] args)
         {
+
             Console.WriteLine("Welcome to Logical Problems ");
-            Console.WriteLine("select options "+"\n"+"1.Fibonacci_Series:"+"\n"+ "2.PerfectNumber :");
+            Console.WriteLine("select options "+"\n"+"1.Fibonacci_Series:"+"\n"+ "2.PerfectNumber :" + "\n" + "3.PrimeNumber :");
             while (true)
             { 
                 int option = Convert.ToInt32(Console.ReadLine());
@@ -20,6 +21,9 @@ namespace BasicLogicalProblems
                     case 2:
                         PerfectNumber perfect = new PerfectNumber();
                         perfect.Perfect();
+                        break;
+                    case 3:
+                        PrimeNumber.CheckPrime(20);
                         break;
                     default:
                         Console.WriteLine("please try again........");
