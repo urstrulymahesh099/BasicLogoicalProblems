@@ -23,16 +23,16 @@ namespace BasicLogicalProblems
             {
                 int count = 0;
                 int random = GenerateRandom();
+                if (count == 0)
+                {
+                    arr[i] = random;
+                }
                 for (int j = 0; j < num; j++)
                 {
                     if (arr[j] == random)
                     {
                         count++;
                     }
-                }
-                if (count == 0)
-                {
-                    arr[i] = random;
                 }
 
             }
