@@ -24,7 +24,6 @@ namespace BasicLogicalProblems
             if (sum == n)
             {
                 Console.WriteLine("\n Entered number is a perfect number");
-                Console.ReadLine();
             }
             else
             {
